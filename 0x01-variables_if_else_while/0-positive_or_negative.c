@@ -1,7 +1,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
+/* 
+ *main - Entry point 
+ *
+ *initliztion for n
+ *
+ *if n > 0 & if n < 0 & if n = 0 
+ *the output will be  positive , zero , negative
+ * Return: Always 0 (success) 
+ */
 
 /* betty style doc for function main goes there */
 int main(void)
