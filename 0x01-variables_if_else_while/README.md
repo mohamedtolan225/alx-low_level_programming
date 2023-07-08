@@ -1,1 +1,1 @@
-variable
+p&n&equal
