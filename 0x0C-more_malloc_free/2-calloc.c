@@ -16,7 +16,8 @@ for (i = 0; i < n; i++)
 s[i] = b;
 }
 return (s);
-}/**
+}
+/**
 * *_calloc - allocates memory for an array
 * @nmemb: number of elements in the array
 * @size: size of each element

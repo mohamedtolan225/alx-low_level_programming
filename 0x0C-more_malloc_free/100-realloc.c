@@ -20,7 +20,8 @@ if (new_size == 0 && ptr)
 free(ptr);
 return (NULL);
 }
-if (!ptr)return (malloc(new_size));
+if (!ptr)
+return (malloc(new_size));
 ptr1 = malloc(new_size);
 if (!ptr1)
 return (NULL);
