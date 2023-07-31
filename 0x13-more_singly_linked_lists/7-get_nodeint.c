@@ -1,23 +1,19 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - return the nth node starting at 0
- * @head: takes in struct listint_t *head
- * @index: takes in an index
- * Return: the integer walker points to
- */
+* get_nodeint_at_index - returns the node at a certain index in a linked list
+* @head: first node in the linked list
+* @index: index of the node to return
+*
+* Return: pointer to the node we're looking for, or NULL
+*/
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-listint_t *move;
-unsigned int con = 0;
-move = head;
-while (move != NULL)
+unsigned int i = 0;
+listint_t *temp = head;
+while (temp && i < index)
 {
-if (con == index)
-{
-return (move);
+temp = temp->next;
+i++;
 }
-con++;
-move = move->next;	
-}
-return (move);
+return (temp ? temp : NULL);
 }
